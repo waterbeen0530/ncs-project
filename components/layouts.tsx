@@ -5,10 +5,10 @@ export default function Layouts({ children }: { children: ReactNode }) {
   return (
     <>
       <Head>
-        <title>Are you got it?</title>
+        <title>chaneat</title>
         <meta
           property="og:description"
-          content="박정애선생님 존경합니다."
+          content="좌찬익선생님 존경합니다."
         ></meta>
       </Head>
       <div>{children}</div>
