@@ -3,7 +3,7 @@ export const theme = {
   BLK: "#222",
   RED1: "#F5594E",
   RED2: "#FFEDEC",
-  ORG: "#FFAA63",
+  ORG: "#FA8159",
   YEW: "#FFAA63",
   GRY1: "#414141",
   GRY2: "#838383",

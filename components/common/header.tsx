@@ -7,18 +7,20 @@ export default function Header() {
     <Container>
       <Wrapper>
         <ItemBox>
-          <Link href="/">
+          <Link href="/main">
             <Logo src="/imgs/header/logo.png" />
           </Link>
           <TextBox>
             <Text>랜덤 메뉴 추천</Text>
             <Text>메뉴 MBTI</Text>
-            <Link href="/todayMenu/create">
+            <Link href="/todayMenu/main">
               <Text>오늘의 메뉴</Text>
             </Link>
           </TextBox>
         </ItemBox>
-        <Button>로그아웃</Button>
+        <Link href="/">
+          <Button>로그아웃</Button>
+        </Link>
       </Wrapper>
     </Container>
   );
@@ -33,6 +35,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   background-color: ${theme.WHT};
+  z-index: 10;
 `;
 
 const Wrapper = styled.div`

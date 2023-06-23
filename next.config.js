@@ -1,6 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
-module.exports = nextConfig
+module.exports = {
+  async rewrites() {
+    return [
+      {
+        source: "/api/:path*",
+        destination: `${BASE_URL}/:path*`,
+      },
+    ];
+  },
+};
