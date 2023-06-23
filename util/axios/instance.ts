@@ -29,7 +29,7 @@ instance.interceptors.response.use(
   },
   async (error) => {
     if (axios.isAxiosError(error) && error.response) {
-      console.log("토큰 두배로 먹어~");
+      console.log("임수빈이~ 교무실로 따라오세요.");
       return Promise.reject(error);
     }
   }

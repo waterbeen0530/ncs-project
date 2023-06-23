@@ -8,7 +8,6 @@ import "react-toastify/dist/ReactToastify.css";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <Layouts>
-      <Header />
       <Component {...pageProps} />
       <ToastContainer autoClose={1200} />
     </Layouts>
