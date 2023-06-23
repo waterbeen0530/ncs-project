@@ -101,8 +101,6 @@ export default function ItemBox() {
       await createPost(createData, imgFile);
       toast.success("게시글 생성에 성공했습니다!");
       router.push("/todayMenu/main");
-      // console.log(imgFile);
-      // console.log(createData);
     } catch (error) {
       toast.error("게시글 생성에 실패했습니다.");
     }

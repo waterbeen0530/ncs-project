@@ -1,3 +1,4 @@
+import Header from "@/components/common/header";
 import ItemBox from "@/components/todayMenu/create/itemBox";
 import TitleBox from "@/components/todayMenu/create/titleBox";
 import { theme } from "@/styles/theme";
@@ -6,6 +7,7 @@ import styled from "@emotion/styled";
 export default function Create() {
   return (
     <Container>
+      <Header />
       <Wrapper>
         <TitleBox />
         <ItemBox />
